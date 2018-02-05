@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 24 17:47:27 2018" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="sys_clk_i_0" SIGIS="undef" SIGNAME="External_Ports_sys_clk_i_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_0" PORT="sys_clk_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sys_rst_i_0" SIGIS="undef" SIGNAME="External_Ports_sys_rst_i_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_0" PORT="sys_rst_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sys_ena_i_0" SIGIS="undef" SIGNAME="External_Ports_sys_ena_i_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_0" PORT="sys_ena_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="sys_LED_o_0" RIGHT="0" SIGIS="undef" SIGNAME="top_0_sys_LED_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_0" PORT="sys_LED_o"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/top_0" HWVERSION="1.0" INSTANCE="top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="top" VLNV="xilinx.com:module_ref:top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="sys_clk_i" SIGIS="undef" SIGNAME="External_Ports_sys_clk_i_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_clk_i_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sys_rst_i" SIGIS="undef" SIGNAME="External_Ports_sys_rst_i_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_rst_i_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sys_ena_i" SIGIS="undef" SIGNAME="External_Ports_sys_ena_i_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_ena_i_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="sys_LED_o" RIGHT="0" SIGIS="undef" SIGNAME="top_0_sys_LED_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_LED_o_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

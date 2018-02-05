@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1517493653">
+  <File Type="PA-TCL" Name="design_2_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="design_2_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="design_2_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="design_2_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="design_2_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_2_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="design_2_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="design_2_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="design_2_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/std/std_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/std/std_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/core_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/core_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/core.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/decode.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/decode.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/std/dsram.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/std/dsram.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/execute.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/execute.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/fetch.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/fetch.vhd"/>
+        <Attr Name="ImportTime" Val="1305470306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/gprf.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/gprf.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/mem.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/mem.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/std/sram.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/std/sram.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/std/sram_4en.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/std/sram_4en.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_2/hdl/design_2_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder_wb/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder_wb/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_wb/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_wb/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/sram_4en_init.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/sram_4en_init.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/sram_init.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/sram_init.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core/testbench.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/core_address_decoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/core_address_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/sw/stdio/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/sw/stdio/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/sw/testbench/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/sw/testbench/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/mblite_soc_synthesis.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/mblite_soc_synthesis.vhd"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/testbench.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/tags/1.0/sw/dhrystone/testbench.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/tags/1.0/sw/dhrystone/testbench.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/tags/1.0/sw/hello_world/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/tags/1.0/sw/hello_world/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder/testbench.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/sw/hello_world/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/sw/hello_world/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/sw/testbench/dhry.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/sw/testbench/dhry.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/core_wb_adapter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/core_wb_adapter.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder_wb/testbench.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder_wb/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/tags/1.0/sw/testbench/dhry.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/tags/1.0/sw/testbench/dhry.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/hw/core/core_wb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/hw/core/core_wb.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder/mblite_stdio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder/mblite_stdio.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/tags/1.0/sw/stdio/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/tags/1.0/sw/stdio/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_wb/testbench.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_wb/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/tags/1.0/sw/testbench/stdio.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/tags/1.0/sw/testbench/stdio.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_decoder_wb/wb_stdio.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_decoder_wb/wb_stdio.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/mblite_soc_timesim.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/mblite_soc_timesim.vhd"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/sw/dhrystone/testbench.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/sw/dhrystone/testbench.h"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mblite/trunk/designs/core_syn/mblite_soc.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/designs/core_syn/mblite_soc.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb/ram.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/tb/ram.mem"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb/rom.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/mblite/trunk/tb/rom.mem"/>
+        <Attr Name="ImportTime" Val="1256161290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="design_2_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/masterthesis4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/masterthesis4.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_2"/>
+</GenRun>

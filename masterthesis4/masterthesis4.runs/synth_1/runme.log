@@ -1,0 +1,272 @@
+
+*** Running vivado
+    with args -log design_2_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVivado/Vivado/2017.4/data/ip'.
+Command: synth_design -top design_2_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8368 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 404.387 ; gain = 104.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_2_wrapper' [C:/Users/Owner/masterthesis4/masterthesis4.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'design_2' declared at 'C:/Users/Owner/masterthesis4/masterthesis4.runs/synth_1/.Xil/Vivado-11044-AtleHusmoUndrum/realtime/design_2_stub.vhdl:5' bound to instance 'design_2_i' of component 'design_2' [C:/Users/Owner/masterthesis4/masterthesis4.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'design_2' [C:/Users/Owner/masterthesis4/masterthesis4.runs/synth_1/.Xil/Vivado-11044-AtleHusmoUndrum/realtime/design_2_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'design_2_wrapper' (1#1) [C:/Users/Owner/masterthesis4/masterthesis4.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 456.211 ; gain = 156.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 456.211 ; gain = 156.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Owner/masterthesis4/masterthesis4.runs/synth_1/.Xil/Vivado-11044-AtleHusmoUndrum/dcp1/design_2_in_context.xdc] for cell 'design_2_i'
+Finished Parsing XDC File [C:/Users/Owner/masterthesis4/masterthesis4.runs/synth_1/.Xil/Vivado-11044-AtleHusmoUndrum/dcp1/design_2_in_context.xdc] for cell 'design_2_i'
+Parsing XDC File [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[3]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[2]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[1]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[0]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[3]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[2]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[1]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sys_LED_o[0]'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sys_ena_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sys_ena_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_i'. [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc:18]
+Finished Parsing XDC File [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_2_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Owner/masterthesis4/masterthesis4.srcs/constrs_1/new/masterthesis4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 701.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 701.469 ; gain = 401.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 701.469 ; gain = 401.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_2_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 701.469 ; gain = 401.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 701.469 ; gain = 401.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 701.469 ; gain = 401.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 768.004 ; gain = 468.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 768.004 ; gain = 468.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |design_2      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |design_2_bbox_0 |     1|
+|2     |IBUF            |     3|
+|3     |OBUF            |     4|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    11|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 777.527 ; gain = 232.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 777.527 ; gain = 477.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 790.773 ; gain = 500.426
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Owner/masterthesis4/masterthesis4.runs/synth_1/design_2_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 791.184 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 15:04:07 2018...
