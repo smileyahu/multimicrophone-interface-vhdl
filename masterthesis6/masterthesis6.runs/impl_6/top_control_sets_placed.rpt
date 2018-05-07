@@ -1,0 +1,130 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Mar 19 13:55:04 2018
+| Host         : AtleHusmoUndrum running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    62 |
+| Unused register locations in slices containing registers |   373 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              33 |           19 |
+| Yes          | No                    | No                     |              42 |           39 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             350 |          160 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|     Clock Signal     |                      Enable Signal                      |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++----------------------+---------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/execute0/reg_reg[interrupt]                   |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[16]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG |                                                         | IRX32S/DEC/CGS.neg_edge_i_1_n_0                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][alu_op][0]_i_1_n_0         |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[17]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][alu_op][3]_i_1_n_0         |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[10]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[18]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_mem][mem_read]_i_1_n_0         |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][operation]_i_1_n_0         |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[22]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[4]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[0]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[26]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[6]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[8]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[2]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[15]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[7]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[9]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[27]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/reg[carry]_i_1_n_0                       | sys_rst_i_IBUF                                      |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[28]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/decode0/reg[msr_interrupt_enable]_i_1_n_0         |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[24]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/CGS.neg_edge_i_2_n_0                         | IRX32S/DEC/CGS.neg_edge_i_1_n_0                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[30]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[11]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/imem_rdwr_i_1_n_0                            |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/new_word_i_1_n_0                             |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[14]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[20]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[1]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[29]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[31]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[19]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[5]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[23]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[25]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[21]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[3]_i_1_n_0                           |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[13]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/data_in[12]_i_1_n_0                          |                                                     |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][alu_op][2]_i_1_n_0         |                1 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][branch_cond][2]_i_1_n_0    |                1 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_mem][transfer_size][1]_i_1_n_0 |                2 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/execute0/r_reg[ctrl_ex][delay]                |                2 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/r[ctrl_mem][transfer_size][1]_i_1__0_n_0 | sys_rst_i_IBUF                                      |                1 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/E[0]                                     |                                                     |                2 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[ctrl_ex][carry][1]_i_1_n_0          |                2 |              2 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/reg[immediate][14]_i_1_n_0            |                1 |              4 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/adr_cnt[4]_i_2_n_0                           | IRX32S/DEC/adr_cnt[4]_i_1_n_0                       |                1 |              5 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/FSM_onehot_sd_ctrl[4]_i_1_n_0                |                                                     |                2 |              5 |
+|  sys_clk_i_IBUF_BUFG | IRX32S/DEC/bit_cnt[5]_i_2_n_0                           | IRX32S/DEC/bit_cnt[5]_i_1_n_0                       |                2 |              6 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/execute0/r[ctrl_wrb][reg_write]               |                2 |              8 |
+|  sys_clk_i_IBUF_BUFG |                                                         |                                                     |                4 |             10 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/reg[immediate][15]_i_1_n_0            |                5 |             12 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/execute0/r_reg[alu_result][20]_0[0]           |                8 |             16 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/decode0/r[program_counter][15]_i_1_n_0        |                6 |             17 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | core0/execute0/r_reg[imm][31][0]                    |               10 |             31 |
+|  sys_clk_i_IBUF_BUFG |                                                         | core0/execute0/rdout_reg[0]                         |               18 |             32 |
+|  sys_clk_i_IBUF_BUFG | core0/execute0/dmem_i[ena_i]                            | sys_rst_i_IBUF                                      |              109 |            232 |
++----------------------+---------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    43 |
+| 2      |                     7 |
+| 4      |                     1 |
+| 5      |                     2 |
+| 6      |                     1 |
+| 8      |                     1 |
+| 10     |                     1 |
+| 12     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl mblite  \
+"../../../../masterthesis6.srcs/sources_1/imports/core/config_Pkg.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/core_decoder/config_Pkg.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/core_decoder_wb/config_Pkg.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/std/std_Pkg.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/core_Pkg.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/core.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/core_wb_adapter.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/decode.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/fetch.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/mem.vhd" \
+"../../../../masterthesis6.srcs/sources_1/imports/hw/core/core_wb.vhd" \
+
+# Do not sort compile order
+nosort

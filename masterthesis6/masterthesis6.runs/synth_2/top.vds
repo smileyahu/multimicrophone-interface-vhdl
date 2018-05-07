@@ -1,0 +1,1246 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 14 14:04:03 2018
+# Process ID: 17052
+# Current directory: C:/Users/Owner/masterthesis6/masterthesis6.runs/synth_2
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Owner/masterthesis6/masterthesis6.runs/synth_2/top.vds
+# Journal file: C:/Users/Owner/masterthesis6/masterthesis6.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1 -flatten_hierarchy full -control_set_opt_threshold 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16636 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 406.020 ; gain = 101.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:59]
+	Parameter G_INTERRUPT bound to: 1 - type: bool 
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+	Parameter G_DEBUG bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'wb_stdio' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:25' bound to instance 'stdio' of component 'wb_stdio' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'wb_stdio' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element byte_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element char_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'wb_stdio' (1#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:32]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'rx_i2s_topm' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:60' bound to instance 'IRX32M' of component 'rx_i2s_topm' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'rx_i2s_topm' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:82]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'rx_i2s_wbd' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_wbd.vhd:62' bound to instance 'WB' of component 'rx_i2s_wbd' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'rx_i2s_wbd' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_wbd.vhd:89]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rx_i2s_wbd' (2#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_wbd.vhd:89]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_version' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:60' bound to instance 'VER' of component 'i2s_version' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'i2s_version' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:69]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2s_version' (3#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:69]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: 32'b11100000111111111111110000000000 
+INFO: [Synth 8-3491] module 'gen_control_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:65' bound to instance 'CONF' of component 'gen_control_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'gen_control_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:79]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: -520094720 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_control_reg' (4#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:79]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: 32'b11000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'gen_control_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:65' bound to instance 'IMASK' of component 'gen_control_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'gen_control_reg__parameterized1' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:79]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: -1073741824 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_control_reg__parameterized1' (4#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:79]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'gen_event_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_event_reg.vhd:68' bound to instance 'ISTAT' of component 'gen_event_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'gen_event_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_event_reg.vhd:83]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_event_reg' (5#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_event_reg.vhd:83]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'dpram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/dpram_rtl.vhd:66' bound to instance 'MEM' of component 'dpram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'dpram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/dpram_rtl.vhd:81]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dpram' (6#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/dpram_rtl.vhd:81]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 1 - type: integer 
+	Parameter IS_RECEIVER bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_codec' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:63' bound to instance 'DEC' of component 'i2s_codec' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'i2s_codec' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:88]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 1 - type: integer 
+	Parameter IS_RECEIVER bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element last_bit_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:265]
+INFO: [Synth 8-256] done synthesizing module 'i2s_codec' (7#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'rx_i2s_topm' (8#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd:82]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'rx_i2s_tops' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:60' bound to instance 'IRX32S' of component 'rx_i2s_tops' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+INFO: [Synth 8-638] synthesizing module 'rx_i2s_tops' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:82]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'rx_i2s_wbd' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_wbd.vhd:62' bound to instance 'WB' of component 'rx_i2s_wbd' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:110]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_version' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:60' bound to instance 'VER' of component 'i2s_version' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'i2s_version__parameterized1' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:69]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2s_version__parameterized1' (8#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd:69]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: 32'b11100000111111111111110000000000 
+INFO: [Synth 8-3491] module 'gen_control_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:65' bound to instance 'CONF' of component 'gen_control_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:149]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ACTIVE_BIT_MASK bound to: 32'b11000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'gen_control_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_control_reg.vhd:65' bound to instance 'IMASK' of component 'gen_control_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:185]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'gen_event_reg' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/gen_event_reg.vhd:68' bound to instance 'ISTAT' of component 'gen_event_reg' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:214]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'dpram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/vhdl/dpram_rtl.vhd:66' bound to instance 'MEM' of component 'dpram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:233]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 0 - type: integer 
+	Parameter IS_RECEIVER bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_codec' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:63' bound to instance 'DEC' of component 'i2s_codec' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'i2s_codec__parameterized1' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:88]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter IS_MASTER bound to: 0 - type: integer 
+	Parameter IS_RECEIVER bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element CGS.toggle_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:155]
+WARNING: [Synth 8-6014] Unused sequential element last_bit_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:265]
+WARNING: [Synth 8-3848] Net i2s_sck_o in module/entity i2s_codec__parameterized1 does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:84]
+WARNING: [Synth 8-3848] Net i2s_ws_o in module/entity i2s_codec__parameterized1 does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'i2s_codec__parameterized1' (8#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'rx_i2s_tops' (9#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd:82]
+	Parameter G_NUM_SLAVES bound to: 2 - type: integer 
+	Parameter G_MEMORY_MAP bound to: 96'b000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'core_address_decoder' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_address_decoder.vhd:23' bound to instance 'decoder' of component 'core_address_decoder' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:390]
+INFO: [Synth 8-638] synthesizing module 'core_address_decoder' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_address_decoder.vhd:38]
+	Parameter G_NUM_SLAVES bound to: 2 - type: integer 
+	Parameter G_MEMORY_MAP bound to: 96'b000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'core_address_decoder' (10#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_address_decoder.vhd:38]
+INFO: [Synth 8-3491] module 'core_wb_adapter' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_wb_adapter.vhd:25' bound to instance 'wb_adapter0' of component 'core_wb_adapter' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:403]
+INFO: [Synth 8-638] synthesizing module 'core_wb_adapter' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_wb_adapter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'core_wb_adapter' (11#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_wb_adapter.vhd:34]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:21' bound to instance 'imem' of component 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:451]
+INFO: [Synth 8-638] synthesizing module 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:37]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sram' (12#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:37]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'sram_4en' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:24' bound to instance 'dmem' of component 'sram_4en' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:471]
+INFO: [Synth 8-638] synthesizing module 'sram_4en_arch' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:75]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:21' bound to instance 'mem' of component 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'sram__parameterized1' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:37]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sram__parameterized1' (12#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:37]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:21' bound to instance 'mem' of component 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:78]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:21' bound to instance 'mem' of component 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:78]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram.vhd:21' bound to instance 'mem' of component 'sram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'sram_4en_arch' (13#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/sram_4en.vhd:75]
+	Parameter G_INTERRUPT bound to: 1 - type: bool 
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+	Parameter G_DEBUG bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'core' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:23' bound to instance 'core0' of component 'core' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:495]
+INFO: [Synth 8-638] synthesizing module 'core' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:42]
+	Parameter G_INTERRUPT bound to: 1 - type: bool 
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+	Parameter G_DEBUG bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'fetch' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/fetch.vhd:26' bound to instance 'fetch0' of component 'fetch' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'fetch' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/fetch.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'fetch' (14#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/fetch.vhd:37]
+	Parameter G_INTERRUPT bound to: 1 - type: bool 
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+	Parameter G_DEBUG bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'decode' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/decode.vhd:26' bound to instance 'decode0' of component 'decode' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'decode' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/decode.vhd:44]
+	Parameter G_INTERRUPT bound to: 1 - type: bool 
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+	Parameter G_DEBUG bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_Pkg.vhd:399]
+INFO: [Synth 8-3491] module 'gprf' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:25' bound to instance 'gprf0' of component 'gprf' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/decode.vhd:487]
+INFO: [Synth 8-638] synthesizing module 'gprf' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:38]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'dsram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd:23' bound to instance 'a' of component 'dsram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'dsram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd:40]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dsram' (15#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd:40]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'dsram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd:23' bound to instance 'b' of component 'dsram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:56]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'dsram' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/dsram.vhd:23' bound to instance 'd' of component 'dsram' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'gprf' (16#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/gprf.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'decode' (17#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/decode.vhd:44]
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'execute' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd:26' bound to instance 'execute0' of component 'execute' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'execute' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd:41]
+	Parameter G_USE_HW_MUL bound to: 1 - type: bool 
+	Parameter G_USE_BARREL bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_Pkg.vhd:399]
+INFO: [Synth 8-256] done synthesizing module 'execute' (18#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd:41]
+INFO: [Synth 8-3491] module 'mem' declared at 'C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/mem.vhd:32' bound to instance 'mem0' of component 'mem' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mem' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/mem.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_Pkg.vhd:432]
+INFO: [Synth 8-226] default block is never used [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core_Pkg.vhd:399]
+INFO: [Synth 8-256] done synthesizing module 'mem' (19#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/mem.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'core' (20#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/core.vhd:42]
+WARNING: [Synth 8-3848] Net s_dmem_i[0][ena_i] in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:86]
+WARNING: [Synth 8-3848] Net wb_sel_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:215]
+WARNING: [Synth 8-3848] Net wb_bte_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:219]
+WARNING: [Synth 8-3848] Net wb_cti_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:220]
+WARNING: [Synth 8-3848] Net wb_clk_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:215]
+WARNING: [Synth 8-3848] Net wb_rst_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:215]
+WARNING: [Synth 8-3848] Net wb_we_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:215]
+WARNING: [Synth 8-3848] Net wb_cyc_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:216]
+WARNING: [Synth 8-3848] Net wb_adr_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:221]
+WARNING: [Synth 8-3848] Net wb_dat_o in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:222]
+WARNING: [Synth 8-3848] Net wb_stb_32bit_rx2 in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:225]
+WARNING: [Synth 8-3848] Net i2s_sd2 in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:226]
+WARNING: [Synth 8-3848] Net i2s_sck2 in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:226]
+WARNING: [Synth 8-3848] Net i2s_ws2 in module/entity top does not have driver. [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:59]
+WARNING: [Synth 8-3331] design core_wb_adapter has unconnected port wb_i[int_i]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[31]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[30]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[29]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[28]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[27]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[26]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[25]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[24]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[23]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[22]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[21]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[20]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[19]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[18]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[17]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[16]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[15]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[14]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[13]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[12]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[11]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[10]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[9]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[8]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[7]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[6]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[5]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[4]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[3]
+WARNING: [Synth 8-3331] design gen_control_reg__parameterized1 has unconnected port ctrl_din[2]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[31]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[30]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[29]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[28]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[27]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[26]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[25]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[24]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[23]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[22]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[7]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[6]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[5]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[4]
+WARNING: [Synth 8-3331] design gen_control_reg has unconnected port ctrl_din[3]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port i2s_sck_o
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port i2s_ws_o
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[7]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[6]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[5]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[4]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[3]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[2]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[1]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port conf_ratio[0]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[31]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[30]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[29]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[28]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[27]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[26]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[25]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[24]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[23]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[22]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[21]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[20]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[19]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[18]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[17]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[16]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[15]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[14]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[13]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[12]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[11]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[10]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[9]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[8]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[7]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[6]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[5]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[4]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[3]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[2]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[1]
+WARNING: [Synth 8-3331] design i2s_codec__parameterized1 has unconnected port sample_dat_i[0]
+WARNING: [Synth 8-3331] design dpram has unconnected port rst
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port i2s_sck_i
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port i2s_ws_i
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[31]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[30]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[29]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[28]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[27]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[26]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[25]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[24]
+WARNING: [Synth 8-3331] design i2s_codec has unconnected port sample_dat_i[23]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 470.688 ; gain = 166.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_sel_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_bte_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_bte_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_cti_i[2] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_cti_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32M:wb_cti_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:271]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_clk_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_rst_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_sel_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_stb_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_we_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_cyc_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_bte_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_bte_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_cti_i[2] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_cti_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_cti_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[5] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[4] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[3] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[2] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_adr_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[31] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[30] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[29] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[28] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[27] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[26] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[25] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[24] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[23] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[22] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[21] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[20] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[19] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[18] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[17] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[16] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[15] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[14] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[13] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[12] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[11] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[10] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[9] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[8] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[7] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[6] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[5] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[4] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[3] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[2] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[1] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:wb_dat_i[0] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:i2s_sd_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:i2s_sck_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin IRX32S:i2s_ws_i to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:332]
+WARNING: [Synth 8-3295] tying undriven pin decoder:s_dmem_i[0][ena_i] to constant 0 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/new/top.vhd:390]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 470.688 ; gain = 166.504
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Owner/masterthesis6/masterthesis6.srcs/constrs_1/new/masterthesis6.xdc]
+Finished Parsing XDC File [C:/Users/Owner/masterthesis6/masterthesis6.srcs/constrs_1/new/masterthesis6.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Owner/masterthesis6/masterthesis6.srcs/constrs_1/new/masterthesis6.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 813.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 813.238 ; gain = 509.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 813.238 ; gain = 509.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 813.238 ; gain = 509.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'chr_cnt_reg' in module 'wb_stdio'
+INFO: [Synth 8-802] inferred FSM for state register 'sd_ctrl_reg' in module 'i2s_codec'
+INFO: [Synth 8-5546] ROM "evt_lsbf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "evt_hsbf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "imem_rdwr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bits_to_trx" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adr_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "evt_lsbf" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element CGM.clk_cnt_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:126]
+WARNING: [Synth 8-6014] Unused sequential element WSM.ws_cnt_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:186]
+INFO: [Synth 8-802] inferred FSM for state register 'sd_ctrl_reg' in module 'i2s_codec__parameterized1'
+INFO: [Synth 8-5546] ROM "evt_lsbf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "evt_hsbf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "imem_rdwr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bits_to_trx" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adr_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "evt_lsbf" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "is_not_zero" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "compare" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "is_not_zero" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[imm]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_op]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_op]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_op]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_src_a]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_src_a]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][alu_src_b]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][carry]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][carry]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_ex][branch_cond]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl_mem][transfer_size]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'r_reg[flush_id]' into 'r_reg[branch]' [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[flush_id] was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/core/execute.vhd:234]
+INFO: [Synth 8-5545] ROM "is_not_zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "is_not_zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_not_zero" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |  0000000000000000000000000000000
+                 iSTATE0 |                               01 |  0000000000000000000000000000001
+                 iSTATE1 |                               10 |  0000000000000000000000000000010
+                 iSTATE2 |                               11 |  0000000000000000000000000000011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'chr_cnt_reg' using encoding 'sequential' in module 'wb_stdio'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                wait_clk |                              001 |                              001
+                trx_data |                              010 |                              010
+                rx_write |                              011 |                              011
+                    sync |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sd_ctrl_reg' using encoding 'sequential' in module 'i2s_codec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+                wait_clk |                            00010 |                              001
+                trx_data |                            00100 |                              010
+                rx_write |                            01000 |                              011
+                    sync |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sd_ctrl_reg' using encoding 'one-hot' in module 'i2s_codec__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 813.238 ; gain = 509.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 7     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 11    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 119   
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 5     
+	             1024 Bit         RAMs := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 80    
+	   5 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   7 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 12    
+	   5 Input      5 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 202   
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 21    
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module wb_stdio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     31 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_i2s_wbd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2s_version 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module gen_event_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+Module dpram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module i2s_codec 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 11    
+Module gen_control_reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 16    
+Module gen_control_reg__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_i2s_topm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module i2s_version__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module i2s_codec__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 10    
+Module rx_i2s_tops 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module core_address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module core_wb_adapter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module sram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module sram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+Module dsram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module decode 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 76    
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+Module execute 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	   3 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "stdio/p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element DEC/i2s_sd_o_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:269]
+WARNING: [Synth 8-6014] Unused sequential element DEC/CGM.clk_cnt_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:126]
+WARNING: [Synth 8-6014] Unused sequential element DEC/WSM.ws_cnt_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element DEC/i2s_sd_o_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd:269]
+INFO: [Synth 8-5545] ROM "is_not_zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/hw/std/std_Pkg.vhd:230]
+DSP Report: Generating DSP multiply0, operation Mode is: A*B.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: Generating DSP multiply0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: Generating DSP multiply0, operation Mode is: A*B.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: Generating DSP multiply0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+DSP Report: operator multiply0 is absorbed into DSP multiply0.
+INFO: [Synth 8-5544] ROM "decode0/compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode0/compare" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode0/compare" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element stdio/chr_dat_reg was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element stdio/wb_o_reg[ack_o] was removed.  [C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/core_decoder_wb/wb_stdio.vhd:39]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/acnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/acnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/acnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/acnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/acnt_reg[4] )
+INFO: [Synth 8-3886] merging instance 'IRX32M/WB/iwr_reg' (FDC) to 'IRX32M/WB/iack_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[24].evt_internal_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[16].evt_internal_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[8].evt_internal_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[25].evt_internal_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[17].evt_internal_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[9].evt_internal_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[26].evt_internal_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[18].evt_internal_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[10].evt_internal_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[27].evt_internal_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[19].evt_internal_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[11].evt_internal_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[28].evt_internal_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[20].evt_internal_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[12].evt_internal_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[4].evt_internal_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[29].evt_internal_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[21].evt_internal_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[13].evt_internal_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[5].evt_internal_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[30].evt_internal_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[22].evt_internal_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[14].evt_internal_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[6].evt_internal_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[31].evt_internal_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[23].evt_internal_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[15].evt_internal_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[7].evt_internal_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[2].evt_internal_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/WB/iack_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRX32M/ISTAT/EVTREG[3].evt_internal_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[0].ACTIVE.ctrl_internal_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[1].ACTIVE.ctrl_internal_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[2].ACTIVE.ctrl_internal_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[8].ACTIVE.ctrl_internal_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[9].ACTIVE.ctrl_internal_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[10].ACTIVE.ctrl_internal_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[11].ACTIVE.ctrl_internal_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[12].ACTIVE.ctrl_internal_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[13].ACTIVE.ctrl_internal_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[14].ACTIVE.ctrl_internal_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[15].ACTIVE.ctrl_internal_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[16].ACTIVE.ctrl_internal_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[17].ACTIVE.ctrl_internal_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[18].ACTIVE.ctrl_internal_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[19].ACTIVE.ctrl_internal_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[20].ACTIVE.ctrl_internal_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/CG32.CONF/CTRLREG[21].ACTIVE.ctrl_internal_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/IM32.IMASK/CTRLREG[0].ACTIVE.ctrl_internal_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/IM32.IMASK/CTRLREG[1].ACTIVE.ctrl_internal_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/iack_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/acnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/acnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/acnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/acnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/WB/acnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/evt_lsbf_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/evt_hsbf_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/ISTAT/evt_irq_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/new_word_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bits_to_trx_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/bit_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.clk_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.neg_edge_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.i2s_clk_en_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/CGM.toggle_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.i2s_ws_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_neg_edge_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/WSM.ws_pos_edge_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/adr_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/adr_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/adr_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/adr_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/adr_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/data_in_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32M/DEC/imem_rdwr_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32S/CG32.CONF/CTRLREG[1].ACTIVE.ctrl_internal_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (IRX32S/CG32.CONF/CTRLREG[8].ACTIVE.ctrl_internal_reg[8]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 813.238 ; gain = 509.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name           | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                | memory_reg | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|sram:                 | ram_reg    | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|execute     | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute     | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute     | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute     | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:01:56 . Memory (MB): peak = 880.441 ; gain = 576.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:01:57 . Memory (MB): peak = 882.598 ; gain = 578.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name           | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                | memory_reg | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|sram:                 | ram_reg    | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|sram__parameterized1: | ram_reg    | 4 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 0      | 1      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dsram:                | ram_reg    | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance IRX32M/MEM/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance imem/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance dmem/mem[0].mem/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance dmem/mem[1].mem/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance dmem/mem[2].mem/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance dmem/mem[3].mem/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core0/decode0/gprf0/a/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core0/decode0/gprf0/b/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core0/decode0/gprf0/d/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 948.777 ; gain = 644.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 948.777 ; gain = 644.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 948.777 ; gain = 644.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 948.777 ; gain = 644.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    17|
+|3     |DSP48E1    |     3|
+|4     |LUT1       |     2|
+|5     |LUT2       |    92|
+|6     |LUT3       |   136|
+|7     |LUT4       |   219|
+|8     |LUT5       |   283|
+|9     |LUT6       |   548|
+|10    |MUXF7      |    61|
+|11    |RAMB18E1   |     4|
+|12    |RAMB36E1   |     1|
+|13    |RAMB36E1_1 |     4|
+|14    |FDRE       |   385|
+|15    |FDSE       |     2|
+|16    |IBUF       |     2|
+|17    |OBUF       |     6|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1766|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 948.777 ; gain = 644.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 263 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:01:51 . Memory (MB): peak = 948.777 ; gain = 302.043
+Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 948.777 ; gain = 644.594
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+237 Infos, 290 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:03 . Memory (MB): peak = 948.777 ; gain = 656.902
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Owner/masterthesis6/masterthesis6.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 948.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 14 14:06:14 2018...

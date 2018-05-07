@@ -1,0 +1,205 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+@           0 ns -- Simulation start with system reset.
+@         200 ns -- Check receiver version registers:
+@         250 ns Check 0x000001b1 at addr. 0x1000 - OK!
+@         310 ns Check 0x00000191 at addr. 0x3000 - OK!
+@         310 ns -- Check transmitter version registers:
+@         370 ns Check 0x00000191 at addr. 0x2000 - OK!
+@         430 ns Check 0x000001b1 at addr. 0x4000 - OK!
+@         430 ns -- Fill up sample buffers with test signal, 
+@         430 ns -- ramp up in left, ramp down in right:
+@         450 ns Wrote 0x00800000 to addr. 0x2020
+@         510 ns Wrote 0x007fff00 to addr. 0x2021
+@         570 ns Wrote 0x0007fff0 to addr. 0x4020
+@         630 ns Wrote 0x00080000 to addr. 0x4021
+@         690 ns Wrote 0x0081f100 to addr. 0x2022
+@         750 ns Wrote 0x007e0e00 to addr. 0x2023
+@         810 ns Wrote 0x0007e0e0 to addr. 0x4022
+@         870 ns Wrote 0x00081f10 to addr. 0x4023
+@         930 ns Wrote 0x0083e200 to addr. 0x2024
+@         990 ns Wrote 0x007c1d00 to addr. 0x2025
+@        1050 ns Wrote 0x0007c1d0 to addr. 0x4024
+@        1110 ns Wrote 0x00083e20 to addr. 0x4025
+@        1170 ns Wrote 0x0085d300 to addr. 0x2026
+@        1230 ns Wrote 0x007a2c00 to addr. 0x2027
+@        1290 ns Wrote 0x0007a2c0 to addr. 0x4026
+@        1350 ns Wrote 0x00085d30 to addr. 0x4027
+@        1410 ns Wrote 0x0087c400 to addr. 0x2028
+@        1470 ns Wrote 0x00783b00 to addr. 0x2029
+@        1530 ns Wrote 0x000783b0 to addr. 0x4028
+@        1590 ns Wrote 0x00087c40 to addr. 0x4029
+@        1650 ns Wrote 0x0089b500 to addr. 0x202a
+@        1710 ns Wrote 0x00764a00 to addr. 0x202b
+@        1770 ns Wrote 0x000764a0 to addr. 0x402a
+@        1830 ns Wrote 0x00089b50 to addr. 0x402b
+@        1890 ns Wrote 0x008ba600 to addr. 0x202c
+@        1950 ns Wrote 0x00745900 to addr. 0x202d
+@        2010 ns Wrote 0x00074590 to addr. 0x402c
+@        2070 ns Wrote 0x0008ba60 to addr. 0x402d
+@        2130 ns Wrote 0x008d9700 to addr. 0x202e
+@        2190 ns Wrote 0x00726800 to addr. 0x202f
+@        2250 ns Wrote 0x00072680 to addr. 0x402e
+@        2310 ns Wrote 0x0008d970 to addr. 0x402f
+@        2370 ns Wrote 0x008f8800 to addr. 0x2030
+@        2430 ns Wrote 0x00707700 to addr. 0x2031
+@        2490 ns Wrote 0x00070770 to addr. 0x4030
+@        2550 ns Wrote 0x0008f880 to addr. 0x4031
+@        2610 ns Wrote 0x00917900 to addr. 0x2032
+@        2670 ns Wrote 0x006e8600 to addr. 0x2033
+@        2730 ns Wrote 0x0006e860 to addr. 0x4032
+@        2790 ns Wrote 0x00091790 to addr. 0x4033
+@        2850 ns Wrote 0x00936a00 to addr. 0x2034
+@        2910 ns Wrote 0x006c9500 to addr. 0x2035
+@        2970 ns Wrote 0x0006c950 to addr. 0x4034
+@        3030 ns Wrote 0x000936a0 to addr. 0x4035
+@        3090 ns Wrote 0x00955b00 to addr. 0x2036
+@        3150 ns Wrote 0x006aa400 to addr. 0x2037
+@        3210 ns Wrote 0x0006aa40 to addr. 0x4036
+@        3270 ns Wrote 0x000955b0 to addr. 0x4037
+@        3330 ns Wrote 0x00974c00 to addr. 0x2038
+@        3390 ns Wrote 0x0068b300 to addr. 0x2039
+@        3450 ns Wrote 0x00068b30 to addr. 0x4038
+@        3510 ns Wrote 0x000974c0 to addr. 0x4039
+@        3570 ns Wrote 0x00993d00 to addr. 0x203a
+@        3630 ns Wrote 0x0066c200 to addr. 0x203b
+@        3690 ns Wrote 0x00066c20 to addr. 0x403a
+@        3750 ns Wrote 0x000993d0 to addr. 0x403b
+@        3810 ns Wrote 0x009b2e00 to addr. 0x203c
+@        3870 ns Wrote 0x0064d100 to addr. 0x203d
+@        3930 ns Wrote 0x00064d10 to addr. 0x403c
+@        3990 ns Wrote 0x0009b2e0 to addr. 0x403d
+@        4050 ns Wrote 0x009d1f00 to addr. 0x203e
+@        4110 ns Wrote 0x0062e000 to addr. 0x203f
+@        4170 ns Wrote 0x00062e00 to addr. 0x403e
+@        4230 ns Wrote 0x0009d1f0 to addr. 0x403f
+@        4270 ns -- *** Test of master TX and slave RX ***
+@        4270 ns -- Enable transmitter 2:
+@        4290 ns Wrote 0x00000003 to addr. 0x4002
+@        4350 ns Wrote 0x00140703 to addr. 0x4001
+@        4390 ns -- Enable recevier 2:
+@        4410 ns Wrote 0x00000003 to addr. 0x3002
+@        4470 ns Wrote 0x00180003 to addr. 0x3001
+@      134050 ns Wait for transmitter 2 LSBF interrupt - OK!
+@      135050 ns -- Check for receiver LSBF interrupt:
+@      135090 ns Check 0x00000001 at addr. 0x3003 - OK!
+@      135090 ns -- Clear transmitter LSBF interrupt:
+@      135110 ns Wrote 0x00000001 to addr. 0x4003
+@      135210 ns Check 0x00000000 at addr. 0x4003 - OK!
+@      135210 ns tx2_int_o verified to be 0!
+@      135210 ns -- Clear receiver LSBF interrupt:
+@      135230 ns Wrote 0x00000001 to addr. 0x3003
+@      135330 ns Check 0x00000000 at addr. 0x3003 - OK!
+@      135330 ns rx2_int_o verified to be 0!
+@      135330 ns -- Check received data, lower sample buffer:
+@      135350 ns Read 0x007fff00 from addr. 0x3020
+@      135450 ns Check 0x007fff00 at addr. 0x3020 - OK!
+@      135510 ns Check 0x00800000 at addr. 0x3021 - OK!
+@      135570 ns Check 0x007e0e00 at addr. 0x3022 - OK!
+@      135630 ns Check 0x0081f100 at addr. 0x3023 - OK!
+@      135690 ns Check 0x007c1d00 at addr. 0x3024 - OK!
+@      135750 ns Check 0x0083e200 at addr. 0x3025 - OK!
+@      135810 ns Check 0x007a2c00 at addr. 0x3026 - OK!
+@      135870 ns Check 0x0085d300 at addr. 0x3027 - OK!
+@      135930 ns Check 0x00783b00 at addr. 0x3028 - OK!
+@      135990 ns Check 0x0087c400 at addr. 0x3029 - OK!
+@      136050 ns Check 0x00764a00 at addr. 0x302a - OK!
+@      136110 ns Check 0x0089b500 at addr. 0x302b - OK!
+@      136170 ns Check 0x00745900 at addr. 0x302c - OK!
+@      136230 ns Check 0x008ba600 at addr. 0x302d - OK!
+@      136290 ns Check 0x00726800 at addr. 0x302e - OK!
+@      136350 ns Check 0x008d9700 at addr. 0x302f - OK!
+@      249250 ns Wait for transmitter 2 HSBF interrupt - OK!
+@      250250 ns -- Check for receiver LSBF interrupt:
+@      250290 ns Check 0x00000002 at addr. 0x3003 - OK!
+@      250290 ns -- Clear transmitter HSBF interrupt:
+@      250310 ns Wrote 0x00000002 to addr. 0x4003
+@      250410 ns Check 0x00000000 at addr. 0x4003 - OK!
+@      250410 ns tx2_int_o verified to be 0!
+@      250410 ns -- Clear receiver HSBF interrupt:
+@      250430 ns Wrote 0x00000002 to addr. 0x3003
+@      250530 ns Check 0x00000000 at addr. 0x3003 - OK!
+@      250530 ns rx2_int_o verified to be 0!
+@      250530 ns -- Check received data, upper sample buffer:
+@      250590 ns Check 0x00707700 at addr. 0x3030 - OK!
+@      250650 ns Check 0x008f8800 at addr. 0x3031 - OK!
+@      250710 ns Check 0x006e8600 at addr. 0x3032 - OK!
+@      250770 ns Check 0x00917900 at addr. 0x3033 - OK!
+@      250830 ns Check 0x006c9500 at addr. 0x3034 - OK!
+@      250890 ns Check 0x00936a00 at addr. 0x3035 - OK!
+@      250950 ns Check 0x006aa400 at addr. 0x3036 - OK!
+@      251010 ns Check 0x00955b00 at addr. 0x3037 - OK!
+@      251070 ns Check 0x0068b300 at addr. 0x3038 - OK!
+@      251130 ns Check 0x00974c00 at addr. 0x3039 - OK!
+@      251190 ns Check 0x0066c200 at addr. 0x303a - OK!
+@      251250 ns Check 0x00993d00 at addr. 0x303b - OK!
+@      251310 ns Check 0x0064d100 at addr. 0x303c - OK!
+@      251370 ns Check 0x009b2e00 at addr. 0x303d - OK!
+@      251430 ns Check 0x0062e000 at addr. 0x303e - OK!
+@      251490 ns Check 0x009d1f00 at addr. 0x303f - OK!
+@      251490 ns -- *** Test of slave TX and master RX ***
+@      251490 ns -- Enable transmitter 1:
+@      251510 ns Wrote 0x00000003 to addr. 0x2002
+@      251570 ns Wrote 0x00180007 to addr. 0x2001
+@      251610 ns -- Enable recevier 1:
+@      251630 ns Wrote 0x00000003 to addr. 0x1002
+@      251690 ns Wrote 0x00100707 to addr. 0x1001
+@      349790 ns Wait for transmitter 1 LSBF interrupt - OK!
+@      349790 ns -- Clear LSBF interrupt:
+@      349810 ns Wrote 0x00000001 to addr. 0x2003
+@      349910 ns Check 0x00000000 at addr. 0x2003 - OK!
+@      349910 ns tx1_int_o verified to be 0!
+@      349910 ns Wait for recevier 1 LSBF interrupt - OK!
+@      349910 ns -- Clear LSBF interrupt:
+@      349930 ns Wrote 0x00000001 to addr. 0x1003
+@      350030 ns Check 0x00000000 at addr. 0x1003 - OK!
+@      350030 ns rx1_int_o verified to be 0!
+@      350030 ns -- Check received data (#1), lower sample buffer:
+@      350050 ns Read 0x00008000 from addr. 0x1020
+@      350150 ns Check 0x00008000 at addr. 0x1020 - OK!
+@      350210 ns Check 0x00007fff at addr. 0x1021 - OK!
+@      350270 ns Check 0x000081f1 at addr. 0x1022 - OK!
+@      350330 ns Check 0x00007e0e at addr. 0x1023 - OK!
+@      350390 ns Check 0x000083e2 at addr. 0x1024 - OK!
+@      350450 ns Check 0x00007c1d at addr. 0x1025 - OK!
+@      350510 ns Check 0x000085d3 at addr. 0x1026 - OK!
+@      350570 ns Check 0x00007a2c at addr. 0x1027 - OK!
+@      350630 ns Check 0x000087c4 at addr. 0x1028 - OK!
+@      350690 ns Check 0x0000783b at addr. 0x1029 - OK!
+@      350750 ns Check 0x000089b5 at addr. 0x102a - OK!
+@      350810 ns Check 0x0000764a at addr. 0x102b - OK!
+@      350870 ns Check 0x00008ba6 at addr. 0x102c - OK!
+@      350930 ns Check 0x00007459 at addr. 0x102d - OK!
+@      350990 ns Check 0x00008d97 at addr. 0x102e - OK!
+@      351050 ns Check 0x00007268 at addr. 0x102f - OK!
+@      441950 ns Wait for transmitter 1 HSBF interrupt - OK!
+@      441950 ns -- Clear HSBF interrupt:
+@      441970 ns Wrote 0x00000002 to addr. 0x2003
+@      442070 ns Check 0x00000000 at addr. 0x2003 - OK!
+@      442070 ns tx1_int_o verified to be 0!
+@      442070 ns Wait for recevier 1 HSBF interrupt - OK!
+@      442070 ns -- Clear HSBF interrupt:
+@      442090 ns Wrote 0x00000002 to addr. 0x1003
+@      442190 ns Check 0x00000000 at addr. 0x1003 - OK!
+@      442190 ns rx1_int_o verified to be 0!
+@      442190 ns -- Check received data (#1), higher sample buffer:
+@      442250 ns Check 0x00008f88 at addr. 0x1030 - OK!
+@      442310 ns Check 0x00007077 at addr. 0x1031 - OK!
+@      442370 ns Check 0x00009179 at addr. 0x1032 - OK!
+@      442430 ns Check 0x00006e86 at addr. 0x1033 - OK!
+@      442490 ns Check 0x0000936a at addr. 0x1034 - OK!
+@      442550 ns Check 0x00006c95 at addr. 0x1035 - OK!
+@      442610 ns Check 0x0000955b at addr. 0x1036 - OK!
+@      442670 ns Check 0x00006aa4 at addr. 0x1037 - OK!
+@      442730 ns Check 0x0000974c at addr. 0x1038 - OK!
+@      442790 ns Check 0x000068b3 at addr. 0x1039 - OK!
+@      442850 ns Check 0x0000993d at addr. 0x103a - OK!
+@      442910 ns Check 0x000066c2 at addr. 0x103b - OK!
+@      442970 ns Check 0x00009b2e at addr. 0x103c - OK!
+@      443030 ns Check 0x000064d1 at addr. 0x103d - OK!
+@      443090 ns Check 0x00009d1f at addr. 0x103e - OK!
+@      443150 ns Check 0x000062e0 at addr. 0x103f - OK!
+@      443150 ns Simulation completed with 0 errors!
+Failure: End of simulation! (ignore this failure)
+Time: 443150 ns  Iteration: 1  Process: /tb_i2s/MAIN  File: C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/bench/vhdl/tb_i2s.vhd
+$finish called at time : 443150 ns : File "C:/Users/Owner/masterthesis6/masterthesis6.srcs/sources_1/imports/trunk/bench/vhdl/tb_i2s.vhd" Line 442

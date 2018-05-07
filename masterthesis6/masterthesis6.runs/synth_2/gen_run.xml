@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1521032641">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/core/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder_wb/config_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder_wb/config_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/std/std_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/std/std_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/core_Pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/core_Pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/core.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/core_address_decoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/core_address_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/core_wb_adapter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/core_wb_adapter.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/decode.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/decode.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/dpram_rtl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/dpram_rtl.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/std/dsram.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/std/dsram.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/execute.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/execute.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/fetch.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/fetch.vhd"/>
+        <Attr Name="ImportTime" Val="1305470306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/gen_control_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/gen_control_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/gen_event_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/gen_event_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/gprf.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/gprf.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/i2s_codec.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/i2s_codec.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/i2s_version.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/i2s_version.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/mem.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/mem.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/rx_i2s_pack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/rx_i2s_pack.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/rx_i2s_topm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/rx_i2s_topm.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/rx_i2s_tops.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/rx_i2s_tops.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/rx_i2s_wbd.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/rx_i2s_wbd.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/std/sram.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/std/sram.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/std/sram_4en.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/std/sram_4en.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder_wb/wb_stdio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder_wb/wb_stdio.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/wb_tb_pack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/bench/vhdl/wb_tb_pack.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/tx_i2s_pack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/tx_i2s_pack.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/tx_i2s_topm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/tx_i2s_topm.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/tx_i2s_tops.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/tx_i2s_tops.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/rtl/vhdl/tx_i2s_wbd.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/rtl/vhdl/tx_i2s_wbd.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/bench/vhdl/tb_i2s.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2s_interface/trunk/bench/vhdl/tb_i2s.vhd"/>
+        <Attr Name="ImportTime" Val="1519806717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hw/core/core_wb.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/hw/core/core_wb.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core/testbench.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder/mblite_stdio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder/mblite_stdio.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder/testbench.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/core_decoder_wb/testbench.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../masterthesis5/masterthesis5.srcs/sources_1/imports/mblite/trunk/designs/core_decoder_wb/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1270158071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/spdif_source.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/bench/vhdl/spdif_source.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tb_gen_spdif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/bench/vhdl/tb_gen_spdif.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tb_rx_spdif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/bench/vhdl/tb_rx_spdif.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tb_spdif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/bench/vhdl/tb_spdif.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_package.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_package.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_wb_decoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_wb_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_package.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_package.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_ver_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_ver_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_spdif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_spdif.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_status_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_status_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_ver_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_ver_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_bitbuf.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_bitbuf.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_spdif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_spdif.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_encoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/dpram_altera.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/dpram_altera.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_phase_det.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_phase_det.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_decode.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_decode.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/rx_cap_reg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/rx_cap_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/tx_wb_decoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="mblite"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../spdif_interface/trunk/rtl/vhdl/tx_wb_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1520597168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/masterthesis6.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/masterthesis6.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">0</Option>
+      <Option Id="ControlSetOptThreshold">0</Option>
+    </Step>
+  </Strategy>
+</GenRun>
