@@ -1,0 +1,121 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 5612
+License: Customer
+
+Current time: 	Sun May 06 17:07:53 CEST 2018
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 46 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/XilinxVivado/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/XilinxVivado/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Owner
+User home directory: C:/Users/Owner
+User working directory: C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0
+User country: 	NO
+User language: 	no
+User locale: 	no_NO
+
+RDI_BASEROOT: C:/XilinxVivado/Vivado
+HDI_APPROOT: C:/XilinxVivado/Vivado/2017.4
+RDI_DATADIR: C:/XilinxVivado/Vivado/2017.4/data
+RDI_BINDIR: C:/XilinxVivado/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Owner/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Owner/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Owner/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/XilinxVivado/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/vivado.log
+Vivado journal file location: 	C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/vivado.jou
+Engine tmp dir: 	C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/.Xil/Vivado-5612-AtleHusmoUndrum
+
+GUI allocated memory:	175 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 550 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 67 MB (+67860kb) [00:00:09]
+// [Engine Memory]: 478 MB (+350157kb) [00:00:09]
+// Opening Vivado Project: C:\Users\Owner\masterthesis6_1_0\masterthesis6_1_0\masterthesis6_1_0.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.xpr 
+// [GUI Memory]: 77 MB (+6933kb) [00:00:10]
+// [Engine Memory]: 526 MB (+24535kb) [00:00:10]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 35 MB. Current time: 5/6/18 5:07:55 PM CEST
+// [Engine Memory]: 574 MB (+23298kb) [00:00:15]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 604 MB (+1118kb) [00:00:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 698 MB (+66422kb) [00:00:22]
+// Tcl Message: open_project C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVivado/Vivado/2017.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 866.355 ; gain = 170.961 
+// Project name: masterthesis6_1_0; location: C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.sdk -hwspec C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.sdk -hwspec C:/Users/Owner/masterthesis6_1_0/masterthesis6_1_0/masterthesis6_1_0.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 81 MB (+170kb) [00:02:41]
+// Elapsed time: 269 seconds
+selectView(PAResourceOtoP.PAViews_FLOW_NAVIGATOR, "Flow Navigator", 75, 75, 214, 933, false, false, false, true, false); // D (cf, cj) - Popup Trigger
+// [Engine Memory]: 735 MB (+3062kb) [00:05:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 46 MB. Current time: 5/6/18 5:13:20 PM CEST
+// [GUI Memory]: 86 MB (+1357kb) [00:07:27]

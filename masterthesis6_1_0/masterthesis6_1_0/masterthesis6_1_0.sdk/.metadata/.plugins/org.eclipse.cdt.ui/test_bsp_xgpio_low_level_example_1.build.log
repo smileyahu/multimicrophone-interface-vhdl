@@ -1,0 +1,21 @@
+13:51:01 **** Build of configuration Debug for project test_bsp_xgpio_low_level_example_1 ****
+make all 
+'Building file: ../src/xgpio_low_level_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_low_level_example.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xgpio_low_level_example.d" -MT"src/xgpio_low_level_example.o" -o "src/xgpio_low_level_example.o" "../src/xgpio_low_level_example.c"
+'Finished building: ../src/xgpio_low_level_example.c'
+' '
+'Building target: test_bsp_xgpio_low_level_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_bsp_xgpio_low_level_example_1.elf"  ./src/xgpio_low_level_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_bsp_xgpio_low_level_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_bsp_xgpio_low_level_example_1.elf  |tee "test_bsp_xgpio_low_level_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2248	    268	   3108	   5624	   15f8	test_bsp_xgpio_low_level_example_1.elf
+'Finished building: test_bsp_xgpio_low_level_example_1.elf.size'
+' '
+
+13:51:02 Build Finished (took 808ms)
+
